@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+header {
+  background-color: transparent;
+  position: fixed;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+header .boxes {
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  padding: 30px 0;
+}
+
+header .boxes .logo {
+  width: 10%;
+}
+
+header.boxes .logo img {
+  width: 100%;
+  font-size: 100px;
+  color: white;
+}
+
+header .boxes .nav-menu {
+  width: 90%;
+}
+
+header .boxes .nav-menu ul {
+  justify-content: flex-end;
+  list-style: none;
+  align-items: center;
+}
+
+header .boxes .nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 60px 25px;
+  font-size: 18px;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bolder;
+  position: relative;
+  transition: 0.5 ease-in-out;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+header .boxes .nav-menu ul li .first::before {
+  content: "";
+  position: absolute;
+  top: 65%;
+  width: 25%;
+  left: 25%;
+  height: 3px;
+  background-color: red;
+  transition: 0.5 ease-in-out;
+}
+
+header .boxes .nav-menu ul li a:hover::before {
+  content: "";
+  position: absolute;
+  top: 65%;
+  width: 25%;
+  left: 25%;
+  height: 3px;
+  background-color: red;
+  transition: 0.5 ease-in-out;
+}
+
+/* header end */
+#home {
+  width: 100%;
+  height: 150vh;
+  background-image: url(../photo/hero_02.jpg);
+  background-position: right right;
+  background-repeat: no-repeat;
+  background-size: 640px auto;
+  background-position: 70% 48%;
+  position: relative;
+  background-color: black;
+}
+
+#home .text h2 {
+  color: #ffffff;
+  font-family: "AvantGarde Bold", Sans-serif;
+  font-size: 78px;
+  font-weight: 800;
+  line-height: 80px;
+  width: 80%;
+  margin: 70px 0;
+  position: relative;
+}
+
+#home .text h2::before {
+  content: "";
+  position: absolute;
+  top: -45%;
+  width: 10%;
+  left: 0%;
+  height: 2px;
+  background-color: red;
+}
+
+#home .text {
+  width: 90%;
+  height: 100vh;
+  line-height: 87px;
+  padding: 16% 16% 16% 150px;
+}
+
+#home .text a {
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 16px;
+  letter-spacing: -0.2px;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #e9204f;
+  color: white;
+  padding: 20px 40px 20px 40px;
+  transition: 0.5s;
+  transform-origin: left left;
+}
+
+#home .text a:hover {
+  background-color: #e9204f;
+}
+
+#home .boxes {
+  width: 80%;
+  margin: auto;
+}
+
+#home .boxes .box {
+  width: 30%;
+  text-align: left;
+  padding: 60px 40px 60px 40px;
+  background-color: #2d2e30;
+  font-family: "Trade Gothic", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  transition: 1s;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+#home .boxes .box i {
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  border: 3px solid white;
+  padding: 8px;
+}
+
+#home .boxes .box h3 {
+  color: #ffffff;
+  font-family: "AvantGarde Bold", Sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4em;
+  position: relative;
+  margin: 50px 0px 5px 0px;
+}
+
+#home .boxes .box p {
+  color: #ffffff;
+  font-family: "Trade Gothic", Sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  margin-top: 30px;
+}
+
+#home .boxes .box h3::before {
+  content: "";
+  position: absolute;
+  top: 105%;
+  width: 25%;
+  left: 0%;
+  height: 3px;
+  background-color: white;
+}
+
+#home .boxes .boxblack {
+  width: 30%;
+  text-align: left;
+  padding: 60px 40px 60px 40px;
+  background-color: #e9204f;
+  font-family: "Trade Gothic", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+#home .boxes .boxblack i {
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  border: 3px solid white;
+  padding: 8px;
+}
+
+#home .boxes .boxblack h3 {
+  color: #ffffff;
+  font-family: "AvantGarde Bold", Sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.4em;
+  position: relative;
+  margin: 50px 0px 5px 0px;
+}
+
+#home .boxes .boxblack p {
+  color: #ffffff;
+  font-family: "Trade Gothic", Sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  margin-top: 30px;
+}
+
+#home .boxes .boxblack h3::before {
+  content: "";
+  position: absolute;
+  top: 105%;
+  width: 25%;
+  left: 0%;
+  height: 3px;
+  background-color: white;
+}
+
+#home .boxes .box:hover {
+  background-color: #e9204f;
+}
+
+/* section bitdi */
+#about {
+  width: 100%;
+}
+
+#about .text {
+  width: 80%;
+  margin: auto;
+}
+
+#about .text .textone {
+  width: 40%;
+  margin-top: 70px;
+}
+
+#about .text .texttwo {
+  width: 60%;
+  margin-top: 90px;
+}
+
+#about .text .textone h2 {
+  color: #1B1B1B;
+  font-family: "AvantGarde Bold", Sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58px;
+}
+
+#about .text .textone h4 {
+  color: #e9204f;
+  font-family: "Trade Gothic", Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 17px;
+}
+
+#about .text .texttwo p {
+  color: #747474;
+  font-family: "Trade Gothic", Sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+#about .imgbox {
+  width: 80%;
+  margin: 50px auto;
+  padding-right: 10px;
+}
+
+#about .imgbox .fimage {
+  width: 65%;
+  padding-right: 15px;
+  position: relative;
+}
+
+#about .imgbox .fimage img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+#about .imgbox .timage {
+  width: 28%;
+  line-height: 10px;
+  
+}
+
+#about .imgbox .timage img {
+  width: 112%;
+  margin-bottom: 8px;
+  filter: grayscale(100%);
+}
+
+/* #about .imgbox .overlay {
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  top: 0;
+  left: 0;
+  
+} */
+
+/* #about .imgbox .fimage:hover .overlay {
+  background-color: none;
+  opacity: 0;
+}
+
+#about .imgbox .overlay h3 {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 28px;
+  letter-spacing: -0.04px;
+} */
+#about .imgbox .fimage img:hover{
+  filter: grayscale(0);
+}
